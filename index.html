@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Random quote machine</title>
+  </head>
+  <body>
+    <main id="quote-box">
+      <div class="text" id="text"><span id="quote"></span></div>
+      <div class="author" id="author"><span id="author"></span></div>
+      <div class="new-quote" id="new-quote" type="button" onclick="getQuote()">
+        New quote
+      </div>
+      <div class="tweet-quote" type="button">
+        <a
+          href="https://twitter.com/intent/tweet"
+          class="fa fa-twitter"
+          id="tweet-quote"
+        ></a>
+      </div>
+    </main>
+  </body>
+</html>

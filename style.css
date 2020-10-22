@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  color: white;
+  text-shadow: 2px 2px 3px #000000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #e5e5e5;
+  grid-template-areas:
+    '. . .'
+    '. text text'
+    '. . author'
+    '. tweet-quote new-quote'
+    '. . .';
+}
+.text {
+  grid-area: text;
+  background-color: #e5e5e5;
+  align-self: center;
+  justify-self: center;
+  color: #955151;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+}
+.author {
+  grid-area: author;
+  background-color: #e5e5e5;
+  align-self: center;
+  justify-self: center;
+  color: #955151;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+}
+.new-quote {
+  grid-area: new-quote;
+  background-color: #e5e5e5;
+  align-self: center;
+  justify-self: center;
+  cursor: pointer;
+}
+.new-quote:hover {
+  color: black;
+  transition-duration: 0.4s;
+}
+.new-quote:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.tweet-quote {
+  grid-area: tweet-quote;
+  background-color: #e5e5e5;
+  align-self: center;
+  justify-self: start;
+  cursor: pointer;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
